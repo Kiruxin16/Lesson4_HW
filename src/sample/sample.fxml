@@ -1,8 +1,15 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+   <TextField fx:id="mesTextField"  AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="60.0" AnchorPane.bottomAnchor="10.0" onAction="#sendMsg" />
+   <TextArea fx:id="textAreaChat" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" AnchorPane.bottomAnchor="80.0"
+             editable="false" />
+   <Button fx:id="sendBtn" prefWidth="40" text=">>" prefHeight="20" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" onAction="#sendMsg"/>
+
+
+
+</AnchorPane>
